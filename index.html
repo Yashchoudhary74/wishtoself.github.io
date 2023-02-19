@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="html" href="F:\vs code\WebDevelopment\JavaScript Tutorial\js programs\wishh\images.html">
+    <style>
+        body {
+            background-color: wheat; 
+            /* background-image: url('https://img1.goodfon.com/wallpaper/nbig/2/36/nastroeniya-serdce-serdechko-1482.jpg');  */
+             
+             background-repeat: no-repeat;
+             background-size: cover;
+             background-blend-mode: lighten;
+
+            height: 100vh;
+            background-attachment: fixed;
+
+
+        }
+
+        h1 {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+
+            animation: blink 2s ease-in infinite alternate;
+        }
+
+        h2 {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            color: #fb00b9;
+            stroke: rgb(0, 0, 0);
+        }
+
+        .allitems {
+            position: sticky;
+        }
+
+        .stkclass {
+            width: 100px;
+            height: 100px;
+
+        }
+
+        .tanupic {
+            /* width: 124px;
+            height: 124px;
+            display: flex;
+             position: relative;
+            top: -36px;
+            left: -36px; 
+            padding: 2px;
+          margin: 2px;
+           */
+            border: 1px solid black;
+            width: 150px;
+            box-shadow: 2px 2px black;
+            height: 150px;
+            display: flex;
+            position: relative;
+            top: -38px;
+            left: -63px;
+            padding: 0px;
+            margin: auto;
+
+        }
+
+
+        .TP {
+            border: 1px solid rgb(0, 0, 0);
+            width: 60px;
+            box-shadow: 2px 2px 17px red;
+            height: 60px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 15px;
+            animation: zoom 2s ease-in infinite alternate;
+        }
+
+        @keyframes zoom {
+            from {
+                box-shadow: 3px 3px 17px red;
+            }
+
+            to {
+                box-shadow: 3px 3px 17px blue;
+            }
+
+        }
+
+
+
+
+        /* #pic2:hover {
+            background-image: url('https://scontent.fidr1-1.fna.fbcdn.net/v/t39.30808-6/271021895_1256055844899110_1806905181273194448_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=xAexVBr9X3wAX-r95nS&_nc_ht=scontent.fidr1-1.fna&oh=00_AfC_eedxkGyyLl4yC436GRky0aXCPkMj_Fk0iPGdtshihw&oe=63B872EC');
+        }
+
+        #pic3:hover {
+            background-image: url('https://scontent.fidr1-1.fna.fbcdn.net/v/t1.6435-9/168487903_1084049758766387_2110719147461573666_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=174925&_nc_ohc=6_VfaLC_ZjgAX9qDf-r&_nc_ht=scontent.fidr1-1.fna&oh=00_AfBvFWQUxZnwApm9O19wXkempWM81h37si3z7-EHglYmug&oe=63DBACC2');
+        }
+
+        #pic4:hover {
+            background-image: url('https://scontent.fidr1-1.fna.fbcdn.net/v/t39.30808-6/270072105_1252709428567085_6346466730129604883_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=zz4t8YwyvZUAX8Jj6O_&_nc_ht=scontent.fidr1-1.fna&oh=00_AfBAybZ0g1y1EtjRuIzX1Ohhi33U2rGIAc0eme3FkLvdJA&oe=63BA37F8');
+        } */
+
+        li {
+            list-style: none;
+            text-align: center;
+            padding: 19px;
+            margin: 4px;
+            font-size: 33px;
+            font-family: cursive;
+            color: rgba(0, 0, 0, 0);
+
+        }
+
+        li:hover {
+            color: #0ea7a7;
+            text-shadow: 2px 2px black;
+        }
+
+        .listsec {
+
+            justify-content: center;
+            align-content: center;
+            display: flex;
+            flex-direction: row;
+            margin: 0px;
+            padding: 0px;
+
+
+        }
+
+        /* .h1sec{
+            position: sticky;
+            top: 0px;
+            
+            background-color: aqua;
+            width: 100vw;
+
+        } */
+
+
+
+        @keyframes blink {
+            from {
+                text-shadow: 2px 2px 13px green;
+            }
+
+            to {
+                text-shadow: 2px 2px 13px red;
+            }
+        }
+
+        .inputSec {
+
+            background-color: #1ee9c44f;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            margin: auto;
+            padding: 50px;
+            border: 1px solid black;
+            width: 190px;
+            position: relative;
+            top: 29px;
+            box-shadow: 2px 2px 13px #2450f1;
+            animation: round 3s ease-in infinite alternate;
+        }
+
+        @keyframes round {
+            from {
+                border-color: aqua red green yellow;
+            }
+
+            to {
+                border-color: red aqua yellow green;
+            }
+
+        }
+
+        #tbl {
+            animation: tbb 0.1s ease-in infinite alternate;
+        }
+
+        @keyframes tbb {
+            from {
+                color: #117de2;
+            }
+
+            to {
+                color: rgb(22, 240, 33);
+            }
+
+        }
+
+        input {
+            margin: auto;
+
+        }
+
+        .button {
+            margin: auto;
+            padding: 12px;
+            border: 2px solid #cb7878;
+            border-radius: 50px;
+        }
+    </style>
+
+    <title>wishingPage - wish to autometically</title>
+</head>
+
+<body>
+
+    <div class="h1sec">
+        <h2 style="font-size: 35px;font-family: cursive;"></h2>
+        <h1 style="text-align: center; width: 100%;  font-size: 30px;">Goodmorning 😊</h1>
+
+        <h2 id="tbl" style="text-align: center; font-size: 28px; color: red;"><img width="100px" height="100px"
+                class="stkclass" src="stk\stk1.png" alt="">Tap this block<img width="100px" height="100px"
+                class="stkclass" src="stk\stk3.png" alt=""></h2>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="tanuPic">
+        <ul class="listsec">
+            <li class="TP">Y</li>
+            <li class="TP">A</li>
+            <li class="TP">S</li>
+            <li class="TP">H</li>
+        </ul>
+        <div class="parentinput">
+        </div>
+
+        <div class="inputSec">
+            <input type="text" value="" name="fname" id="fname">
+            <br>
+            <input class="button" type="button" value="Submit" onclick="ShowPic()">
+
+        </div>
+    </div>
+
+
+    <script>
+
+        let d = new Date();
+        a = d.getMinutes();
+        b = d.getHours();
+        c = d.toTimeString();
+        s = d.getSeconds();
+    
+        cd = b+":"+a+":"+s;
+
+        document.querySelector('h2').innerHTML = cd;
+
+
+
+        if (c >= "06:00:00" && c < "12:00:00") {
+            document.querySelector('h1').innerText = "Goodmorning 😊";
+        }
+        else if (c >= "12:00:00" && c < "16:00:00") {
+            document.querySelector('h1').innerText = "Goodafternoon 😢";
+        }
+
+        else if (c >= "16:00:00" && c < "19:00:00") {
+            document.querySelector('h1').innerText = "Goodevening 😊";
+        }
+        else if (c >= "19:00:00" && c < "23:59:59") {
+            document.querySelector('h1').innerText = "Goodevening 😊";
+            document.querySelector('h1').style.color = "gold";
+            document.querySelector('h2').style.color = "#38dfdf";
+            document.querySelector('.inputSec').style.backgroundColor = "#1826971f";
+            document.body.style.backgroundImage = "url('https://w0.peakpx.com/wallpaper/146/516/HD-wallpaper-black-texture-with-purple-neon-lines-black-abstract-background-purple-neon-lines-3d-black-background-3d-polygons-texture.jpg')";
+        }
+        else {
+            document.querySelector('h1').innerText = "Goodnight ";
+            document.querySelector('h1').style.color = "gold";
+            document.querySelector('h2').style.color = "#38dfdf";
+            document.querySelector('.inputSec').style.backgroundColor = "#1826971f";
+            document.body.style.backgroundImage = "url('https://w0.peakpx.com/wallpaper/146/516/HD-wallpaper-black-texture-with-purple-neon-lines-black-abstract-background-purple-neon-lines-3d-black-background-3d-polygons-texture.jpg')";
+        }
+
+
+        function ShowPic() {
+            let value1 = document.getElementById('fname').value;
+            if (value1 == "yash") {
+                //  window.open("images.html","");
+                window.location.href = "images.html";
+            }
+            else {
+                alert("Incorrect Keyword");
+            }
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>
